@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--gris-fondo);
+    color: var(--texto);
+}
+
+#navar {
+    background: var(--azul-dark);
+    color: white;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#estado-live {
+  color: #4ade80;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#pestañas {
+  display: flex;
+  background: white;
+  border-bottom: 1px solid var(--borde);
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 12px 18px;
+  border: none;
+  background: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.tab.activa {
+  color: var(--verde);
+  border-bottom-color: var(--verde);
+  font-weight: 600;
+}
+
+.seccion {
+  display: none;
+  padding: 20px;
+}
+
+.seccion.activa {
+  display: block;
+}

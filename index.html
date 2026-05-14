@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESI-Bikes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>Bienvenido a tu pagina compañero Cardenal</h1>
     <p>Sistema de Bicicletas del Instituto</p>
+
+    <nav id="navar">
+        <div id="logo">🚲 TESI Bikes </div>
+        <span id="estado-live"> EN VIVO</span>
+    </nav>
+
+    <div id="pestañas">
+
+        <button class="tab activa" onclick="MostrarSeccion('Mapa')">🗺️ Mapa</button>
+        <button class="tab" onclick="MostrarSeccion('Bicicletas')">🚲 Bicicletas</button>
+        <Button class="tab" onclick="MostrarSeccion('QR')">📱 Escanear QR</Button>
     
+    </div>
+
+
+    <section id="Seccion-Mapa" class="Seccion Activa">
+        <h2>Mapa del Tecnologico</h2>
+        <p>Aqui ira el Mapa</p>
+    </section>
+    
+    
+    <section id="Seccion-Bicicletas" class="Seccion">
+        <h2>Bicicletas</h2>
+        <div id="Lista-Bicicletas"></div>
+    </section>
+
+    <section id="Seccion-QR" class="Seccion">
+        <h2>Escanea el QR</h2>
+        <p>Apunta la camara al codigo QR de tu BiciTESI</p>
+    </section>
+
+    <script src="app.js"></script>
+
+
 </body>
 </html>
+
+
