@@ -132,3 +132,57 @@ body {
     padding: 4px 10px;
     border-radius: 20px;
 }
+
+#mapa {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+#contenedor-qr {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contenedor-qr h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#contenedor-qr p {
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+#info-bici {
+    background: white;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#info-bici h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--texto);
+}
+
+#info-bici p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#btn-desbloquear {
+    margin-top: 16px;
+    width: 100%;
+    padding: 14px;
+    background: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
