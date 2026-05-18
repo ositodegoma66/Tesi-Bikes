@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESI-Bikes</title>
+    <title>TESI Bikes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Bienvenido a tu pagina compañero Cardenal</h1>
-    <p>Sistema de Bicicletas del Instituto</p>
-
-    <nav id="navar">
-        <div id="logo">🚲 TESI Bikes </div>
-        <span id="estado-live"> EN VIVO</span>
+    <nav id="navbar">
+        <div id="logo">🚲 TESI Bikes</div>
+        <span id="estado-live">● EN VIVO</span>
     </nav>
 
-    <div id="pestañas">
-
-        <button class="tab activa" onclick="MostrarSeccion('Mapa')">🗺️ Mapa</button>
-        <button class="tab" onclick="MostrarSeccion('Bicicletas')">🚲 Bicicletas</button>
-        <Button class="tab" onclick="MostrarSeccion('QR')">📱 Escanear QR</Button>
-    
+    <div id="pestanas">
+        <button id="tab-mapa" class="tab activa" onclick="mostrarSeccion('mapa')">🗺️ Mapa</button>
+        <button id="tab-bicicletas" class="tab" onclick="mostrarSeccion('bicicletas')">🚲 Bicicletas</button>
+        <button id="tab-qr" class="tab" onclick="mostrarSeccion('qr')">📱 Escanear QR</button>
     </div>
 
-
-    <section id="Seccion-Mapa" class="Seccion Activa">
+    <section id="seccion-mapa" class="seccion activa">
         <h2>Mapa del Tecnologico</h2>
         <p>Aqui ira el Mapa</p>
     </section>
-    
-    
-    <section id="Seccion-Bicicletas" class="Seccion">
+
+    <section id="seccion-bicicletas" class="seccion">
         <h2>Bicicletas</h2>
-        <div id="Lista-Bicicletas"></div>
+        <div id="lista-bicicletas"></div>
     </section>
 
-    <section id="Seccion-QR" class="Seccion">
+    <section id="seccion-qr" class="seccion">
         <h2>Escanea el QR</h2>
         <p>Apunta la camara al codigo QR de tu BiciTESI</p>
     </section>
 
     <script src="app.js"></script>
 
-
 </body>
 </html>
-
-
